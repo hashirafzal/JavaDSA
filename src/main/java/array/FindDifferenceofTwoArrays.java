@@ -1,3 +1,4 @@
+package array;
 class Solution {
     public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
         List<List<Integer>> listOfint = new ArrayList<>();
@@ -6,7 +7,7 @@ class Solution {
 
         for(int n:nums1) h1.add(n);
         for(int m:nums2) h2.add(m);
-        
+
         for(int n: nums1)
         {
             if(h2.contains(n))
@@ -18,7 +19,7 @@ class Solution {
 
         listOfint.add(new ArrayList<>(h1));
         listOfint.add(new ArrayList<>(h2));
-         return listOfint;
+        return listOfint;
     }
 
 }
